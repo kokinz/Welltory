@@ -1,10 +1,17 @@
 import React from 'react';
+import Footer from '../footer/footer';
+import Header from '../header/header';
+import Main from '../main/main';
 
 import './app.scss';
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   );
 }
 
