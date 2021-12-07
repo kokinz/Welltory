@@ -265,10 +265,22 @@
     background-color: #FFFFFF;
     opacity: 0.2;
   }
+
+  &:nth-child(2) {
+    margin-bottom: 17px;
+  }
+
+  &:last-child {
+    margin-top: 26px;
+
+    &::before {
+      background-color: transparent;
+    }
+  }
 }
 
 .table__text {
-  width: 57.5%;
+  width: 56.5%;
 
   font-size: 15px;
   line-height: 20px;
@@ -288,7 +300,9 @@
     width: 20px;
     height: 1px;
     left: 18px;
-    top: 49px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 
     background: #FFFFFF;
   }
@@ -296,7 +310,7 @@
   &--checked::before {
     width: 10px;
     left: 18px;
-    top: 52px;
+    top: 4px;
 
     background: #52B692;
     transform: rotate(45deg);
@@ -309,7 +323,9 @@
     width: 1px;
     height: 17px;
     left: 32px;
-    top: 41px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 
     background: #52B692;
     transform: rotate(45deg);
