@@ -35,8 +35,8 @@ function Main() {
 
         <div className="tariff-plans__subheaders">
           <p className="tariff-plans__subheader">What you get</p>
-          <p className="tariff-plans__subheader">Free</p>
-          <p className="tariff-plans__subheader">Pro</p>
+          <p className="tariff-plans__subheader tariff-plans__subheader--free">Free</p>
+          <p className="tariff-plans__subheader tariff-plans__subheader--pro">Pro</p>
         </div>
 
         <div className="tariff-plans__table table">

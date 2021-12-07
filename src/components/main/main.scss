@@ -183,8 +183,20 @@
 
 .tariff-plans__subheader {
   position: relative;
-  width: 49%;
-  height: 40px;
+  width: 57.5%;
+  height: 41px;
+
+  &--free {
+    width: 16.75%;
+
+    text-align: center;
+  }
+
+  &--pro {
+    width: 16.75%;
+
+    text-align: center;
+  }
 
   &::before {
     position: absolute;
@@ -199,5 +211,13 @@
 
     background-color: #FFFFFF;
     opacity: 0.7;
+  }
+
+  &--pro::before {
+    height: 4px;
+    bottom: -1px;
+    left: -2px;
+
+    background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
   }
 }
