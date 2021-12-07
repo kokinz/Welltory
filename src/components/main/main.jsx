@@ -26,7 +26,7 @@ function Main() {
           </li>
         </ul>
 
-        <button className="tariffs__button">Continue</button>
+        <button className="tariffs__button button">Continue</button>
         <p className="tariffs__description">No commitments. Cancel anytime</p>
       </section>
 
