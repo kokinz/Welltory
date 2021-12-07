@@ -1,0 +1,143 @@
+.tariffs__header {
+  width: 320px;
+  margin: 17px auto 0;
+
+  font-size: 27px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.6px;
+}
+
+.tariffs__list {
+  margin-top: 23px;
+  padding: 16px 19px 0;
+}
+
+.tariff {
+  position: relative;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  min-width: 282px;
+  height: 132px;
+  margin-bottom: 24px;
+
+  background-color: #1B212A;
+  border-radius: 4px;
+
+  &--active::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+    border-radius: 4px;
+    z-index: -1;
+  }
+}
+
+.tariff__title {
+  margin-top: 56px;
+  margin-left: 9.7%;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+
+  color: #FFFFFF;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.tariff__price {
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: 35px;
+  margin-bottom: 0;
+
+  font-size: 22px;
+  line-height: 32px;
+  text-align: right;
+
+  color: #89A3FF;
+
+  &--yellow {
+    color: #EFDD36;
+  }
+}
+
+.tariff__description {
+  min-width: 150px;
+  margin-left: 32px;
+  margin-top: 0;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #FFFFFF;
+  opacity: 0.5;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.tariff__prev-price {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: 34px;
+  margin-bottom: 0;
+  min-width: 60px;
+
+  font-size: 16px;
+  line-height: 25px;
+
+  text-align: right;
+  text-decoration-line: line-through;
+
+  color: #C0C3CD;
+  opacity: 0.5;
+}
+
+.tariff__discount {
+  position: absolute;
+
+  box-sizing: border-box;
+  width: 98px;
+  height: 38px;
+  left: 28px;
+  top: -25px;
+  padding-top: 8px;
+
+  background-color: #89A3FF;
+  border-radius: 0 5px 5px 5px;
+
+  font-size: 19px;
+  line-height: 32px;
+
+  text-align: center;
+  color: #FFFFFF;
+
+  &--yellow {
+    color: #151A22;
+    background-color: #EFDD36;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    left: -6px;
+    top: 0;
+
+    opacity: 0.4;
+    border: 3px solid transparent; border-right: 3px solid #89A3FF; border-bottom: 3px solid #89A3FF;
+  }
+
+  &--yellow::before {
+    border: 3px solid transparent; border-right: 3px solid #EFDD36; border-bottom: 3px solid #EFDD36;
+  }
+}

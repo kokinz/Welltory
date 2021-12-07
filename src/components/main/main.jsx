@@ -6,9 +6,9 @@ function Main() {
       <h1 className="main__header visually-hidden">Welltory</h1>
 
       <section className="main__tariffs tariffs">
-        <h2 className="tariffs__header">Take better care of yourself every day</h2>
+        <h2 className="tariffs__header">Take better care of&nbsp;yourself every day</h2>
 
-        <ul className="tariffs__list">
+        <ul className="tariffs__list list">
           <li className="tariffs__item tariff">
             <h3 className="tariff__title">Monthly</h3>
             <p className="tariff__price">$ 5.99</p>
@@ -17,12 +17,12 @@ function Main() {
             <p className="tariff__discount">– 15%</p>
           </li>
 
-          <li className="tariffs__item tariff tariffs__item--active">
+          <li className="tariffs__item tariff tariff--active">
             <h3 className="tariff__title">Annualy</h3>
-            <p className="tariff__price">$ 4.99</p>
+            <p className="tariff__price tariff__price--yellow">$ 4.99</p>
             <p className="tariff__description tariff__description--active">$79 billed once a year</p>
             <p className="tariff__prev-price">$ 5.99</p>
-            <p className="tariff__discount">– 25%</p>
+            <p className="tariff__discount tariff__discount--yellow">– 25%</p>
           </li>
         </ul>
 
