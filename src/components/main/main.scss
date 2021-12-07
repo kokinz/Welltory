@@ -124,11 +124,6 @@
   text-align: center;
   color: #FFFFFF;
 
-  &--yellow {
-    color: #151A22;
-    background-color: #EFDD36;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -137,11 +132,20 @@
     top: 0;
 
     opacity: 0.4;
-    border: 3px solid transparent; border-right: 3px solid #89A3FF; border-bottom: 3px solid #89A3FF;
+    border: 3px solid transparent;
+    border-right: 3px solid #89A3FF;
+    border-bottom: 3px solid #89A3FF;
   }
 
-  &--yellow::before {
-    border: 3px solid transparent; border-right: 3px solid #EFDD36; border-bottom: 3px solid #EFDD36;
+  &--yellow {
+    color: #151A22;
+    background-color: #EFDD36;
+
+    &::before {
+      border: 3px solid transparent;
+      border-right: 3px solid #EFDD36;
+      border-bottom: 3px solid #EFDD36;
+    }
   }
 }
 
