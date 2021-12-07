@@ -170,7 +170,6 @@
 .tariff-plans__subheaders {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 
   padding: 11px 3.7%;
 
@@ -186,6 +185,8 @@
   width: 57.5%;
   height: 41px;
 
+  margin-bottom: 0;
+
   &--free {
     width: 16.75%;
 
@@ -196,6 +197,10 @@
     width: 16.75%;
 
     text-align: center;
+
+    background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &::before {
@@ -216,8 +221,97 @@
   &--pro::before {
     height: 4px;
     bottom: -1px;
-    left: -2px;
+    left: -1px;
 
     background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+  }
+}
+
+.table__header {
+  margin-top: 24px;
+
+  font-family: 'Steinbeck', 'Tahoma', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 22px;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  mix-blend-mode: normal;
+  text-shadow: 0px 13.2985px 26.5969px rgba(255, 0, 63, 0.2);
+  background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.table__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 3px 3.7% 2px;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    bottom: 0;
+    left: 3.7%;
+    right: 3.7%;
+    height: 1px;
+
+    background-color: #FFFFFF;
+    opacity: 0.2;
+  }
+}
+
+.table__text {
+  width: 57.5%;
+
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+
+  color: #FFFFFF;
+}
+
+.table__check {
+  position: relative;
+  width: 16.7%;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 20px;
+    height: 1px;
+    left: 18px;
+    top: 49px;
+
+    background: #FFFFFF;
+  }
+
+  &--checked::before {
+    width: 10px;
+    left: 18px;
+    top: 52px;
+
+    background: #52B692;
+    transform: rotate(45deg);
+  }
+
+  &--checked::after {
+    position: absolute;
+    content: "";
+
+    width: 1px;
+    height: 17px;
+    left: 32px;
+    top: 41px;
+
+    background: #52B692;
+    transform: rotate(45deg);
   }
 }
