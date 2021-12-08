@@ -24,43 +24,43 @@ function Footer() {
             </Link>
           </li>
         </ul>
-
-        <ul className="footer__links list">
-          <li className="footer__link">
-            <Link to="/">Terms of use</Link>
-          </li>
-
-          <li className="footer__link">
-            <Link to="/">Privacy policy</Link>
-          </li>
-        </ul>
-
-        <ul className="footer__social-links list">
-          <li className="footer__social-link">
-            <Link to="/">
-              <img src="/img/twitter.png" alt="Twitter" />
-            </Link>
-          </li>
-
-          <li className="footer__social-link">
-            <Link to="/">
-              <img src="/img/facebook.png" alt="Facebook" />
-            </Link>
-          </li>
-
-          <li className="footer__social-link">
-            <Link to="/">
-              <img src="/img/instagram.png" alt="Instagram" />
-            </Link>
-          </li>
-
-          <li className="footer__social-link">
-            <Link to="/">
-              <img src="/img/linkedln.png" alt="Linkedln" />
-            </Link>
-          </li>
-        </ul>
       </div>
+
+      <ul className="footer__links list">
+        <li>
+          <Link className="footer__link link" to="/">Terms of use</Link>
+        </li>
+
+        <li>
+          <Link className="footer__link link" to="/">Privacy policy</Link>
+        </li>
+      </ul>
+
+      <ul className="footer__social-links list">
+        <li className="footer__social-link">
+          <Link to="/">
+            <img src="/img/twitter.png" alt="Twitter" />
+          </Link>
+        </li>
+
+        <li className="footer__social-link">
+          <Link to="/">
+            <img src="/img/facebook.png" alt="Facebook" />
+          </Link>
+        </li>
+
+        <li className="footer__social-link">
+          <Link to="/">
+            <img src="/img/instagram.png" alt="Instagram" />
+          </Link>
+        </li>
+
+        <li className="footer__social-link">
+          <Link to="/">
+            <img src="/img/linkedln.png" alt="Linkedln" />
+          </Link>
+        </li>
+      </ul>
     </footer>
   );
 }

@@ -1,0 +1,81 @@
+.footer {
+  margin-top: 94px;
+}
+
+.apps__header {
+  text-align: center;
+  color: #FFFFFF;
+
+  opacity: 0.7;
+}
+
+.apps__list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 84px;
+  margin: 0 auto;
+}
+
+.apps__image {
+  &--apple {
+    margin-top: 4px;
+  }
+
+  &--google {
+    margin-top: 7px;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 2px 5px #52B692);
+  }
+
+  &:active {
+    filter: drop-shadow(0 2px 5px #FFBF00);
+  }
+}
+
+.footer__links {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  width: 66%;
+  margin: 49px auto 0;
+
+  &::before {
+    position: absolute;
+
+    content: "|";
+    top: 0;
+    left: 47.5%;
+
+    color: #FFFFFF;
+    opacity: 0.5;
+  }
+}
+
+.footer__link {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.footer__social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 43%;
+  margin: 31px auto 126px;
+}
+
+.footer__social-link {
+  opacity: 0.4;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 1;
+    filter: drop-shadow(0 2px 5px #52B692);
+  }
+}
