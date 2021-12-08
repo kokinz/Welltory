@@ -7,4 +7,12 @@
   width: 126px;
   margin-top: 57px;
   margin-left: 2.5%;
+
+  @media (min-width: 1024px) {
+    width: 169px;
+    height: 39px;
+    
+    margin-top: 23px;
+    margin-left: 15.8%;
+  }
 }

@@ -5,7 +5,10 @@ function Header() {
   return (
     <header className="header">
       <Link className="header__logo" to="/" aria-label="Welltory">
-        <img src="/img/logo-mobile.png" alt="logo Welltory" />
+        <picture>
+          <source media="(min-width: 1024px)" srcSet="/img/logo.png" />
+          <img src="/img/logo-mobile.png" alt="logo Welltory" />
+        </picture>
       </Link>
     </header>
   );
