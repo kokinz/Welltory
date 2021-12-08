@@ -7,11 +7,24 @@
   text-align: center;
   letter-spacing: 0.6px;
   color: #FFFFFF;
+
+  @media (min-width: 768px) {
+    width: 600px;
+  }
 }
 
 .tariffs__list {
   margin-top: 23px;
   padding: 16px 19px 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 694px;
+    padding: 16px 3.7% 0;
+    margin: 23px auto 0;
+  }
 }
 
 .tariff {
@@ -38,6 +51,10 @@
     background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
     border-radius: 4px;
     z-index: -1;
+  }
+
+  @media (min-width: 768px) {
+    width: 337px;
   }
 }
 
