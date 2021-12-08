@@ -93,6 +93,7 @@
   @media (min-width: 768px) {
     width: 337px;
     height: 188px;
+    margin-bottom: 33px;
   }
 }
 
@@ -229,6 +230,10 @@
   letter-spacing: 0.02em;
 
   color: #FFFFFF;
+
+  @media (min-width: 768px) {
+    margin-top: 67px;
+  }
 }
 
 .tariff-plans__subheaders {
