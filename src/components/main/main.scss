@@ -6,6 +6,7 @@
   line-height: 32px;
   text-align: center;
   letter-spacing: 0.6px;
+  color: #FFFFFF;
 }
 
 .tariffs__list {
@@ -248,6 +249,14 @@
   background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  &--large {
+    margin-top: 77px;
+    margin-bottom: 28px;
+
+    font-size: 22px;
+    line-height: 25px;
+  }
 }
 
 .table__item {
@@ -272,19 +281,51 @@
 
   &:nth-child(2) {
     margin-bottom: 17px;
+    padding: 1px 3.7% 2px;
+  }
+
+  &:nth-child(3) {
+    padding: 5px 3.7% 2px;
+  }
+
+  &:nth-child(4) {
+    padding: 6px 3.7% 2px;
   }
 
   &:last-child {
     margin-top: 26px;
+    padding: 0 3.7% 2px;
 
     &::before {
       background-color: transparent;
     }
   }
+
+  &--second {
+    &:nth-child(2) {
+      padding-top: 41px;
+      margin-bottom: 0;
+    }
+
+    &:nth-child(3) {
+      padding-top: 1px;
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(4) {
+      padding-top: 1px;
+      margin-bottom: 18px;
+    }
+
+    &:last-child {
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
 }
 
 .table__text {
-  width: 56.5%;
+  width: 57%;
 
   font-size: 15px;
   line-height: 20px;
@@ -303,7 +344,7 @@
 
     width: 20px;
     height: 1px;
-    left: 18px;
+    left: 34%;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -312,26 +353,38 @@
   }
 
   &--checked::before {
-    width: 10px;
-    left: 18px;
-    top: 4px;
+    width: 16px;
+    height: 8px;
+    left: 34%;
+    top: -7px;
 
-    background: #52B692;
-    transform: rotate(45deg);
+    background: transparent;
+    border: 1px solid transparent;
+    border-left: 1px solid #52B692;
+    border-bottom: 1px solid #52B692;
+    transform: rotate(-45deg);
+  }
+}
+
+.tariff-plans__button {
+  margin-bottom: 27px;
+  padding-top: 7px;
+
+  max-width: 343px;
+
+  &--upgrade {
+    margin-top: 85px;
   }
 
-  &--checked::after {
-    position: absolute;
-    content: "";
+  &--free {
+    font-family: 'Montserrat', 'Tahoma', sans-serif;
+    font-size: 19px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
 
-    width: 1px;
-    height: 17px;
-    left: 32px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-
-    background: #52B692;
-    transform: rotate(45deg);
+    background: none;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: none;
   }
 }

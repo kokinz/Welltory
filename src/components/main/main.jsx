@@ -81,7 +81,7 @@ function Main() {
         </div>
 
         <div className="tariff-plans__table table">
-          <h3 className="table__header">Gain rich health insights</h3>
+          <h3 className="table__header table__header--large">Gain rich health insights</h3>
 
           <ul className="table__list list">
             <li className="table__item">
@@ -91,28 +91,35 @@ function Main() {
               <p className="table__check table__check--checked"></p>
             </li>
 
-            <li className="table__item">
+            <li className="table__item table__item--second">
               <p className="table__text">In-depth blood pressure analysis: input your numbers and we’ll provide five extra indexes, give detailed interpretations, and alert you if something doesn’t look right</p>
 
               <p className="table__check"></p>
               <p className="table__check table__check--checked"></p>
             </li>
 
-            <li className="table__item">
+            <li className="table__item table__item--second">
+              <p className="table__text">Blood pressure reports: send your data to your doctor or print out neat reports with all your readings</p>
+
+              <p className="table__check"></p>
+              <p className="table__check table__check--checked"></p>
+            </li>
+
+            <li className="table__item table__item--second">
               <p className="table__text">Basic heartbeat analytics: just your stress, energy, and focus scores — no extra metrics</p>
 
               <p className="table__check table__check--checked"></p>
               <p className="table__check table__check--checked"></p>
             </li>
 
-            <li className="table__item">
-              <p className="table__text">Basic blood pressure analysis: we’ll interpret your top and bottom numbers — without extra indexes </p>
+            <li className="table__item table__item--second">
+              <p className="table__text">Basic blood pressure analysis: we’ll interpret your top and bottom numbers — without extra indexes</p>
 
               <p className="table__check table__check--checked"></p>
               <p className="table__check table__check--checked"></p>
             </li>
 
-            <li className="table__item">
+            <li className="table__item table__item--second">
               <p className="table__text">Yesterday’s heart report sent to your feed daily: note the relationship between your activities and any changes to your heart rate</p>
 
               <p className="table__check table__check--checked"></p>
