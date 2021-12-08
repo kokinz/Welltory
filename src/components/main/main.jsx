@@ -1,6 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+const Plans = {
+  MONTHLY: 'Monthly',
+  ANNUALY: 'Annualy',
+}
 
 function Main() {
+  const [activePlan, setActivePlan] = useState(Plans.ANNUALY);
+
+  const handleMonthlyPlanSet = () => {
+    setActivePlan(Plans.MONTHLY);
+  };
+
+  const handleAnnualyPlanSet = () => {
+    setActivePlan(Plans.ANNUALY);
+  };
+
   return (
     <main className="main">
       <h1 className="main__header visually-hidden">Welltory</h1>
@@ -9,18 +24,18 @@ function Main() {
         <h2 className="tariffs__header">Take better care of&nbsp;yourself every day</h2>
 
         <ul className="tariffs__list list">
-          <li className="tariffs__item tariff">
-            <h3 className="tariff__title">Monthly</h3>
+          <li className={`tariffs__item tariff ${activePlan === Plans.MONTHLY ? 'tariff--active' : ''}`} onClick={handleMonthlyPlanSet}>
+            <h3 className="tariff__title">{Plans.MONTHLY}</h3>
             <p className="tariff__price">$ 5.99</p>
-            <p className="tariff__description">Billed every month</p>
+            <p className={`tariff__description ${activePlan === Plans.MONTHLY ? 'tariff__description--active' : ''}`}>Billed every month</p>
             <p className="tariff__prev-price">$ 7.99</p>
             <p className="tariff__discount">– 15%</p>
           </li>
 
-          <li className="tariffs__item tariff tariff--active">
-            <h3 className="tariff__title">Annualy</h3>
+          <li className={`tariffs__item tariff ${activePlan === Plans.ANNUALY ? 'tariff--active' : ''}`} onClick={handleAnnualyPlanSet}>
+            <h3 className="tariff__title">{Plans.ANNUALY}</h3>
             <p className="tariff__price tariff__price--yellow">$ 4.99</p>
-            <p className="tariff__description tariff__description--active">$79 billed once a year</p>
+            <p className={`tariff__description ${activePlan === Plans.ANNUALY ? 'tariff__description--active' : ''}`}>$79 billed once a year</p>
             <p className="tariff__prev-price">$ 5.99</p>
             <p className="tariff__discount tariff__discount--yellow">– 25%</p>
           </li>

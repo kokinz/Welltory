@@ -40,17 +40,29 @@
 
   background-color: #1B212A;
   border-radius: 4px;
+  cursor: pointer;
+  transition: all 500ms;
 
-  &--active::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    left: -1px;
-    right: -1px;
-    background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
-    border-radius: 4px;
-    z-index: -1;
+  &--active {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+      border-radius: 4px;
+      z-index: -1;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 2px 5px #FFBF00;
+  }
+
+  &--active:hover {
+    box-shadow: none;
   }
 
   @media (min-width: 768px) {
