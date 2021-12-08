@@ -80,11 +80,14 @@
 
   cursor: pointer;
 
+  transition: all 500ms;
+
   &:hover {
-    filter: drop-shadow(0 2px 5px #52B692);
+    box-shadow: 0 2px 5px #52B692;
+    transform: scale(1.05);
   }
 
   &:active {
-    filter: drop-shadow(0 2px 5px #FFBF00);
+    box-shadow: 0 2px 5px #FFBF00;
   }
 }
