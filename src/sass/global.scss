@@ -23,10 +23,13 @@
   font-family: 'Montserrat', 'Tahoma', sans-serif;
 
   background-color: #151A22;
-  background-image: url("../img/layout.png");
-  background-position: left top;
-  background-size: 1920px auto;
-  background-repeat: no-repeat;
+
+  @media (min-width: 1200px) {
+    background-image: url("../img/layout.png");
+    background-position: left top;
+    background-size: 1920px auto;
+    background-repeat: no-repeat;
+  }
 }
 
 .root {
