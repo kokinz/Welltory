@@ -90,4 +90,8 @@
   &:active {
     box-shadow: 0 2px 5px #FFBF00;
   }
+
+  @media (max-width: 370px) {
+    width: 280px;
+  }
 }

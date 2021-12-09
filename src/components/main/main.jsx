@@ -87,7 +87,7 @@ function Main() {
             </li>
 
             <li className="table__item">
-              <p className="table__text">Yesterday's movereport: see if you’re doing enough to support your health</p>
+              <p className="table__text">Yesterday's move report: see if you’re doing enough to support your health</p>
 
               <p className="table__check table__check--checked"></p>
               <p className="table__check table__check--checked"></p>
@@ -143,8 +143,10 @@ function Main() {
           </ul>
         </div>
 
-        <button className="tariff-plans__button button tariff-plans__button--upgrade">Upgrade now</button>
-        <button className="tariff-plans__button button tariff-plans__button--free">Go with the free version</button>
+        <div className="tariff-plans__wrapper-buttons">
+          <button className="tariff-plans__button button tariff-plans__button--upgrade">Upgrade now</button>
+          <button className="tariff-plans__button button tariff-plans__button--free">Go with the free version</button>
+        </div>
       </section>
     </main>
   );

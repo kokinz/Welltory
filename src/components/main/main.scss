@@ -247,6 +247,11 @@
   letter-spacing: 0.02em;
 
   color: #FFFFFF;
+
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    width: 692px;
+  }
 }
 
 .tariff-plans__subheader {
@@ -272,7 +277,7 @@
     -webkit-text-fill-color: transparent;
   }
 
-  &::before {
+  &::after {
     position: absolute;
 
     content: "";
@@ -287,12 +292,35 @@
     opacity: 0.7;
   }
 
-  &--pro::before {
+  &--pro::after {
     height: 4px;
     bottom: -1px;
     left: -1px;
 
     background: linear-gradient(91.33deg, #89A3FF 0%, #FF6060 54.17%, #FFBF00 100%);
+  }
+
+  @media (min-width: 768px) {
+    &--free {
+      text-transform: lowercase;
+
+      &::before {
+        content: "for ";
+      }
+    }
+
+    &--pro {
+      &::before {
+        content: "in ";
+      }
+    }
+  }
+}
+
+.tariff-plans__table {
+  @media (min-width: 768px) {
+    width: 748px;
+    margin: 0 auto;
   }
 }
 
@@ -320,6 +348,19 @@
 
     font-size: 22px;
     line-height: 25px;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 34px;
+    margin-bottom: 9px;
+
+    font-size: 22px;
+    line-height: 25px;
+
+    &--large {
+      margin-top: 27px;
+      margin-bottom: 18px;
+    }
   }
 }
 
@@ -386,6 +427,34 @@
       margin-top: 0;
     }
   }
+
+  @media (min-width: 768px) {
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(4) {
+      margin-top: -16px;
+    }
+
+    &:last-child {
+      margin-top: 9px;
+    }
+
+    &--second {
+      &:nth-child(2) {
+        padding-top: 20px;
+      }
+
+      &:nth-child(3) {
+        margin-bottom: 16px;
+      }
+
+      &:last-child {
+        margin-top: 21px;
+      }
+    }
+  }
 }
 
 .table__text {
@@ -396,6 +465,10 @@
   letter-spacing: 0.01em;
 
   color: #FFFFFF;
+
+  @media (min-width: 768px) {
+    width: 58.5%;
+  }
 }
 
 .table__check {
@@ -428,6 +501,24 @@
     border-bottom: 1px solid #52B692;
     transform: rotate(-45deg);
   }
+
+  @media (min-width: 768px) {
+    &::before {
+      left: 39%;
+    }
+
+    &--checked::before {
+      left: 39%;
+    }
+  }
+}
+
+.tariff-plans__wrapper-buttons {
+  @media (min-width: 768px) {
+    display: flex;
+    width: 692px;
+    margin: 0 auto;
+  }
 }
 
 .tariff-plans__button {
@@ -450,5 +541,22 @@
     color: #FFFFFF;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: none;
+  }
+
+  @media (min-width: 768px) {
+    &--free {
+      margin-top: 42px;
+      margin-left: 1px;
+      width: 335px;
+    }
+
+    &--upgrade {
+      order: 1;
+      margin-top: 42px;
+      margin-left: 20px;
+      margin-right: 0;
+
+      width: 335px;
+    }
   }
 }
