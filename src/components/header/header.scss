@@ -1,5 +1,26 @@
 .header {
   min-height: 120px;
+
+  @media (min-width: 1190px) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 100px;
+      height: 100px;
+      right: -76px;
+      top: 62px;
+
+      background: #03CB34;
+      opacity: 0.4;
+      filter: blur(33px);
+      transform: rotate(90deg);
+      border-radius: 50%;
+    }
+  }
+
 }
 
 .header__logo {

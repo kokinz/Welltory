@@ -1,3 +1,41 @@
+.main {
+  @media (min-width: 1190px) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      width: 560px;
+      height: 670px;
+      right: -243px;
+      top: 552px;
+
+      background: #FF6060;
+      opacity: 0.2;
+      filter: blur(90px);
+      transform: rotate(90deg);
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 67px;
+      height: 67px;
+      left: 30px;
+      top: 315px;
+
+      background: #89A3FF;
+      opacity: 0.4;
+      filter: blur(33px);
+      transform: rotate(90deg);
+      border-radius: 50%;
+    }
+  }
+}
+
 .tariffs__header {
   width: 320px;
   margin: 17px auto 0;
